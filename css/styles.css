@@ -1,0 +1,140 @@
+:root {
+  --color-dark: #001b2f;
+  --color-light: #ffffff;
+  --color-primary: #00b63e;
+  --color-black: #000000;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--color-light);
+  color: var(--color-black);
+}
+
+a { text-decoration: none; color: inherit; }
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+header.hero {
+  background: var(--color-dark);
+  color: var(--color-light);
+  padding: 32px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.logo img {
+  height: 40px;
+  vertical-align: middle;
+}
+.logo span {
+  color: var(--color-light);
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card {
+  background: rgba(0, 27, 47, 0.05);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-light);
+}
+.btn-ghost {
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.section {
+  padding: 40px 0;
+}
+.section.alt {
+  background: rgba(0, 27, 47, 0.05);
+}
+
+.cards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.plan {
+  background: var(--color-light);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+.badge {
+  display: inline-block;
+  background: var(--color-primary);
+  color: var(--color-light);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.benefits {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.benefit {
+  background: rgba(0, 27, 47, 0.05);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.kpis {
+  display: flex;
+  justify-content: space-around;
+}
+.kpi {
+  text-align: center;
+}
+
+.cta-final {
+  background: var(--color-dark);
+  color: var(--color-light);
+  padding: 40px 0;
+}
+footer {
+  background: var(--color-dark);
+  color: var(--color-light);
+  text-align: center;
+  padding: 16px 0;
+  font-size: 14px;
+}
